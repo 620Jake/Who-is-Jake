@@ -144,17 +144,17 @@ h2, h3{
 /* smaller fonts for mobile devices, before text wouldn't fit my screen*/
 @media screen and (max-width: 480px) and (orientation: portrait) {
   h1 {
-    font-size: 2rem; 
+    font-size: 2.5rem; 
   }
 
-  h2, h3, .auto_type {
+  h2, h3, h4{
     font-size: 1.5rem;
   }
 
   #learn-more-btn {
     width: 160px;
     height: 50px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .container {
