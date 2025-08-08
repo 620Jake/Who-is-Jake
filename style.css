@@ -147,7 +147,7 @@ h2, h3{
     font-size: 2.5rem; 
   }
 
-  h2, h3, h4{
+  h2, h3, .auto_type{
     font-size: 1.5rem;
   }
 
