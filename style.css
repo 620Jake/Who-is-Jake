@@ -140,3 +140,14 @@ h2, h3{
     cursor: pointer;
     color: black;
 }
+
+@media (max-width: 768px) { /* tablets & phones */
+  h2, h3, h4 {
+    font-size: 2rem;
+  }
+  #learn-more-btn {
+    width: 150px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
