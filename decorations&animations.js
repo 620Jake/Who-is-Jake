@@ -28,8 +28,7 @@ setTimeout(() => {
     strings: [
       "a Student Mentor",
       "a Website Developer",
-      "a UT Student",
-      "an Aspiring Electrical Engineer"
+      "a UT Student"
     ],
     typeSpeed: 100,
     backSpeed: 100,
