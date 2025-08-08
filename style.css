@@ -124,7 +124,7 @@ h2, h3{
   transition: opacity 1s ease;
   font-size: 1.5em;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translateX(-50%);
   text-decoration: none;
