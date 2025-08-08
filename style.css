@@ -1,0 +1,124 @@
+/* Basic Reset and Layout */
+* {
+  box-sizing: border-box; /* Makes padding/margin behave predictably */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-family: monospace;
+  transition: background 1s ease-in-out; /* 👈 Add this line */
+}
+
+/* Container for centering content */
+.container {
+  text-align: center;
+  
+}
+
+h2, h3, h4{
+    color: white;
+}
+
+/* Hidden class for delaying visibility */
+.hidden {
+  display: none;
+}
+
+/* "Hello!" fade in/out animation */
+.hello-text {
+  font-size: 5em;
+  animation: fadeInOut 4s ease-in-out forwards;
+}
+
+/* Typewriter effect */
+.typewriter {
+  position: absolute;   /* Change from relative to absolute */
+  top: 25%;             /* 25% from the top of the viewport */
+  left: 50%;            /* Horizontally center */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 4em;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.typewriter:not(.hidden) {
+  opacity: 1;
+  animation: typing 3s steps(13, end) forwards,
+             blink-cursor 0.7s step-end 4.5s 4, /* blink 4x during 3s typing + 1.5s pause */
+             deleting 2.5s steps(13, end) forwards 4.5s; /* Start delete after 3s + 1.5s */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgb(255, 255, 255);
+}
+
+
+/* Keyframes */
+
+/* "Hello!" fades in, pauses, then fades out */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Typing effect for "Who is Jake?" (13 characters) */
+@keyframes typing {
+  from { width: 0ch; }
+  to { width: 13ch; }
+}
+
+@keyframes deleting {
+  from { width: 13ch; }
+  to { width: 0ch; }
+}
+
+
+/* Blinking cursor */
+@keyframes blink-cursor {
+  50% { border-color: transparent; }
+}
+
+.typewriter2 {
+  position: absolute;   /* Change from relative to absolute */
+  top: 25%;             /* 25% from the top of the viewport */
+  left: 50%;            /* Horizontally center */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 4em;
+  opacity: 0;
+  transition: opacity 0.5s easte-in-out;
+}
+
+.typewriter2:not(.hidden) {
+  opacity: 1;
+  animation: typing2 2.5s steps(7, end), forwards;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgb(255, 255, 255); /* Simulated cursor */
+}
+
+@keyframes typing2 {
+  from { width: 0ch; }
+  to { width: 7ch; }
+}
+
+#learn-more-btn {
+  opacity: 0;
+  transition: opacity 1s ease;
+  font-size: 1.5em;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: rgb(231, 155, 15);
+  color: white;
+  border-radius: 8px;
+  pointer-events: none; /* Prevents clicking while hidden */
+}
