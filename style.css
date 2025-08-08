@@ -141,13 +141,23 @@ h2, h3{
     color: black;
 }
 
-@media (max-width: 768px) { /* tablets & phones */
-  h2, h3, h4 {
-    font-size: 2rem;
+/* smaller fonts for mobile devices, before text wouldn't fit my screen*/
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  h1 {
+    font-size: 2rem; 
   }
+
+  h2, h3, .auto_type {
+    font-size: 1.5rem;
+  }
+
   #learn-more-btn {
-    width: 150px;
-    height: 45px;
-    font-size: 1.2rem;
+    width: 160px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 1rem;
   }
 }
