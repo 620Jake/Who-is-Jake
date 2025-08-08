@@ -147,14 +147,18 @@ h2, h3{
     font-size: 2.5rem; 
   }
 
-  h2, h3, .auto_type {
+  h2, h3,{
     font-size: 1.35rem;
+  }
+  .auto_type {
+    font-size: 1.5rem;
   }
 
   #learn-more-btn {
     width: 160px;
     height: 50px;
     font-size: 1.2rem;
+    align-content: center;
   }
 
   .container {
